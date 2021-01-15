@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+.bodykleur{background-color: white;}
+
+body {
+  margin: 0;
+}
+
+
+.above{
+   text-align: center;
+   color: white;
+   font-family: verdana;
+   padding: 5px ;
+   font-size: 13px;
+   background-color: black;
+   }
+
+/* Style the header */
+.header {
+  background-color: white;
+
+  text-align: center;
+  font-family: verdana;
+  color: #4c2a12;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #cfb997;
+  color: black;
+  font-family: "Trebuchet ms";
+  text-align: center;
+  padding: 12px 14px;
+  margin-top:0;
+  margin-left:60;
+  margin-right:60;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: center;
+  display: inline;
+  color: black;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #4c2a12;
+  color: white;
+}
+
+.title {
+  font-size: 30px;
+  margin-left: 255px;
+  margin-top: 20px;
+  font-family: "Trebuchet ms";
+}
+
+.NormaleText{
+  font-size: 14px;
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+.headertwo {
+  overflow: hidden;
+  background-color: #4c2a12;
+  padding: 20px;
+  margin-top: 50px;
+  }
+
+  .button {
+  background-color: #4c2a12;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  font-family:"Brandon Grotesque", sans-serif;
+  margin-left: 60px;
+}
+
+  .button:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+  a.headertwo {
+    display: inline-block;
+    color: white;
+    text-align:left;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  a {
+    color: #d6c1a1;
+  }
