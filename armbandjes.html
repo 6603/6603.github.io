@@ -1,20 +1,17 @@
 <html lang="en">
 <link rel="stylesheet" href="layout.css"><head>
 <title>LotsOfJewerly</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+.LotsOfJewerly { max-width: 100%;
+}
 
-img { max-width: 100%;
+.plaatje {
+  width:20%;
+  height:auto;
 }
 
 
-  p.center {
-    text-align: center;
-    color: #4c2a12;
-    font-size: 30px;
-    font-family: "trebuchet ms";
-}
 
 .centersmall {
   text-align: center;
@@ -25,33 +22,81 @@ img { max-width: 100%;
 }
 
 .bodykleur{background-color: #cfb997;}
-.buttonyolo{ background-color: #4c2a12;
-color: white ;
-text-align: center;
-border: none;
-font-size: 15px;
-font-family: verdana;
-display: inline-block;
-padding: 5px 68px;}
+
 
 h1{ color: #4c2a12 ;
  text-align: center;
  font-family: verdana;
    }
 
-   .buttonyolo{ background-color: #4c2a12;
-   color: white ;
+
+
+  /* Style the top navigation bar */
+  .buttonyolo {
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    text-align: center;
     border: none;
-    font-size: 15px;
     font-family: verdana;
-    display: inline-block;
-    padding: 5px 58px;}
+    font-size: 15px;
+    height:40 ;
+    width: 437;
+
+
+  }
+
+  /* Style the topnav links */
+  .buttonyolo a {
+    float: center;
+      text-align: center;
+    display: inline;
+    color: black;
+    text-decoration: none;
+
+  }
+
+  /* Change color on hover */
+  .buttonyolo a:hover {
+    background-color: #4c2a12;
+    color: white;
+    padding: 12px 14px;
+  }
 
 
 p.center {
   text-align: center;
   color: #4c2a12;
-  font-family: verdana;}
+  font-family: verdana;
+  margin-top:0;
+  margin-left:60;
+  margin-right:60;
+  width:20%;
+  height:auto;
+}
+
+.container {
+  position: relative;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  transition: .5s ease;
+
+}
+
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
 
 p.bigsize {
   padding: 50px;
@@ -60,6 +105,42 @@ p.bigsize {
     text-align: center;
     color: #4c2a12;
     font-family: verdana; }
+
+.newtimes {
+color: #98b899 ;
+font-family: 'Times New Roman', serif;
+font-size: 40px;
+margin-top:0;
+margin-left:60;
+margin-right:60;
+}
+
+span.a {
+  display: inline-block; /* the default for span */
+  color: #4c2a12 ;
+font-size: 16px;
+  font-family: 'Times New Roman', serif;
+  margin-top:0;
+  margin-left:60;
+  margin-right:60;
+
+
+}
+
+span.b {
+  display: inline-block; /* the default for span */
+  margin-top:0;
+  margin-left:60;
+  margin-right:60;
+  background-color: #98b899 ;
+  color: white ;
+   border: none;
+   font-size: 15px;
+   font-family: verdana;
+   padding: 5px 58px;
+
+}
+
 
 </style>
 </head>
@@ -71,8 +152,8 @@ p.bigsize {
 
 
 <div class="header">
-  <h1>   <a href="C:\Users\elisa\OneDrive\Desktop\website\index.html">
-       <img src="LotsOfJewerlybrown.jpg" alt="LotsOfJewerly"/ width=150 height=150/>  </a>
+  <h1>   <a href="index.html">
+       <img src="lotsofjewerlybrown.jpg" alt="LotsOfJewerly"/ width=150 height=150/>  </a>
   </h1>
 
 </div>
@@ -85,53 +166,167 @@ p.bigsize {
   <a href="oorbellen.html">Oorbellen</a>
   <a href="kettingen.html">Kettingen</a>
   <a href="ringen.html">Ringen</a>
-  <a href="armbandjes.html">Armbandjes</a>
+  <a href="armbandjes.html">Accessoires</a>
   <a href="kleren.html">Kleren</a>
 </div>
 <p>.</p>
-
-
-  <p class="center">
-    <img src="https://i.pinimg.com/236x/b8/1e/d1/b81ed135e2f36d5473123a86e9f1465b.jpg" alt="big hoops gold" width="310" height="370"/>
-    <img src= "https://i.pinimg.com/236x/08/9c/dd/089cdd60eb466e57f2ae7017e511d475.jpg" alt="heart earrings" width="310" height="370"/>
-  <img src="https://i.pinimg.com/236x/65/49/b7/6549b7e7d283bf67e446e18749b82fb4.jpg"  alt="big hoops zilver" width="310" height="370"/>
-  <img src= "https://i.pinimg.com/236x/cd/cc/56/cdcc5662b8a5f401af8da50e44534f09.jpg" alt="butterfly earrings" width="310" height="370"/>
-</p>
+<div class="newtimes"> Kettingen  <span class="a"> 12 producten </span> </div>
 
 <p class="center">
-<button class="buttonyolo">  'preal heart earrings' €10,-' </button>
-<button class="buttonyolo" > 'green heart earrings' €10,- </button>
-<button class="buttonyolo"> 'hoop earrings set' €40,- </button>
-<button class="buttonyolo"> 'butterfly earrings' €10,- </button>
-</p>
+<table>
+<tr>
+
+  <td>
+
+    <div class="container">
+      <img src="https://i.pinimg.com/564x/db/fe/4a/dbfe4ab0c8c5ee9adb83d4b5410605ec.jpg" alt="Avatar" class="image" width="437" height="514">
+      <div class="overlay">
+        <div class="text"><img src="https://i.pinimg.com/564x/31/a2/46/31a2468c4a6ce05e89ee906ab72e9187.jpg" width="437" height="514"></div>
+      </div>
+    </div>
+    </td>
+  <td>
+
+  <div class="container">
+  <img src="https://i.pinimg.com/564x/f9/e8/20/f9e8201476bcfe1c655d26254c9a44ea.jpg" alt="Avatar" class="image" width="437" height="514">
+  <div class="overlay">
+    <div class="text"><img src="https://i.pinimg.com/564x/38/76/fc/3876fc648d86ead5dac3a3769ca6b631.jpg" width="437" height="514"></div>
+  </div>
+
+</div> </td>
+  <td>
+    <div class="container">
+      <img src="https://i.pinimg.com/564x/55/6c/a9/556ca981fcc135205930ff7b335de4b2.jpg" alt="Avatar" class="image" width="437" height="514">
+      <div class="overlay">
+        <div class="text"><img src="https://i.pinimg.com/564x/16/91/a1/1691a1ed628fe843258dc8a3ca54df63.jpg" width="437" height="514"></div>
+      </div>
+    </div>
+    </td>
+
+  <td>
+    <div class="container">
+      <img src="https://i.pinimg.com/564x/6c/28/c9/6c28c9094923225b81066334d355ef6d.jpg" alt="Avatar" class="image" width="437" height="514">
+      <div class="overlay">
+        <div class="text"><img src="https://i.pinimg.com/564x/5f/72/c2/5f72c20549d45b29ac0ca24eed0da8fb.jpg" width="437" height="514"></div>
+      </div>
+    </div>
+  </td>
+</tr>
+
 
 <p class="center">
-<img src= "https://i.pinimg.com/236x/f4/ad/63/f4ad634eccb8cee1fbd3c9f958e8959c.jpg" alt="small hoop earrings" width="310" height="370"/>
-<img src= "https://i.pinimg.com/236x/54/ad/89/54ad89b71ce6673c776183eb349782e1.jpg" alt="twisted hoop earrings" width="310" height="370"/>
-<img src= "https://i.pinimg.com/564x/d0/27/20/d02720f72c44cac2743018700bed84a8.jpg" alt="tree hoop earrings" width="310" height="370"/>
-<img src= "https://i.pinimg.com/236x/95/7a/56/957a5629c9b2c85f2c2b232c8d9fb56e.jpg" alt="tree hoop earrings" width="310" height="370"/>
+<td><button class="buttonyolo">'Brown sunnies' €8,99 </button></td>
+<td><button class="buttonyolo">'Zwarte Prada tas ' €158,- </button></td>
+<td><button class="buttonyolo">'Haar clip' €5,- </button> </td>
+<td><button class="buttonyolo">'Dior head scraf' €90,- </button>
+</td>
+
+</table>
 </p>
 
+
+
 <p class="center">
-<button class="buttonyolo">  'thick small hoops' €10,-' </button>
-<button class="buttonyolo" > 'big twisted hoops' €10,- </button>
-<button class="buttonyolo"> 'big 3 rings earrings' €10,- </button>
-<button class="buttonyolo"> 'small 3 rings earrings' €10,- </button>
+<table>
+<tr>
+<td>
+  <div class="container">
+  <img src="https://i.pinimg.com/564x/dd/b2/07/ddb20706184765d0c31a1556b937ec37.jpg" class="image" width="437" height="514">
+  <div class="overlay">
+  <div class="text"><img src="https://i.pinimg.com/564x/54/8c/9b/548c9b82d6a6db55b8d367543757e2e3.jpg" width="437" height="514"></div>
+    </div>
+  </div>
+  </td>
+<td> <div class="container">
+  <img src="https://i.pinimg.com/564x/6a/7b/88/6a7b886ea21745723b6131ebef4ae186.jpg " alt="Avatar" class="image" width="437" height="514">
+  <div class="overlay">
+    <div class="text"><img src="https://i.pinimg.com/564x/cc/8c/a6/cc8ca65175bfb2ddf9ee8163ddab534f.jpg" width="437" height="514"></div>
+  </div>
+</div> </td>
+
+<td>
+
+  <div class="container">
+    <img src="https://i.pinimg.com/564x/8f/c1/bf/8fc1bf0c0155b1b003e8455201c62b72.jpg" alt="Avatar" class="image" width="437" height="514">
+    <div class="overlay">
+      <div class="text"><img src="https://i.pinimg.com/564x/2d/3e/b9/2d3eb9cb8cde922f6c0f29274b757216.jpg" width="437" height="490"></div>
+    </div>
+  </div></td>
+<td>
+
+  <div class="container">
+    <img src="https://i.pinimg.com/564x/d0/31/49/d03149e93522a2d01a45fb55980c38d5.jpg" alt="Avatar" class="image" width="437" height="514">
+    <div class="overlay">
+      <div class="text"><img src="https://i.pinimg.com/564x/f3/fc/8d/f3fc8d71d81dae4b8ef1671a087e4027.jpg" width="437" height="514"></div>
+    </div>
+  </div>
+
+</td>
+</tr>
+
+
+<p class="center">
+<td><button class="buttonyolo" > 'Wildflower heart case' €40,- </button></td>
+<td><button class="buttonyolo"> 'Wildflower cow case' €40,- </button></td>
+<td><button class="buttonyolo"> 'Black sunnies' €8,- </button></td>
+<td><button class="buttonyolo">  'Tote bags teddy' €20,-' </button></td>
 </p>
+</table>
+</p>
+
 
 <p class="center" >
-  <img src= "https://i.pinimg.com/236x/27/f8/36/27f836d3960ef6c8a898c392630a140d.jpg" alt="twisted hoop earrings" alt="small hoop earrings" width="310" height="370"/>
-  <img src= "https://i.pinimg.com/236x/b5/fb/b9/b5fbb996c0ccf8be327212f68a09ed0c.jpg" alt="twisted hoop earrings" width="310" height="370"/>
-  <img src= "https://i.pinimg.com/236x/70/29/53/702953b620231abef5215506b51fdfcb.jpg" alt="tree hoop earrings" width="310" height="370"/>
-  <img src= "https://i.pinimg.com/236x/aa/24/00/aa2400d8c4e0ed9171b249b7dcf3b887.jpg" alt="tree hoop earrings" width="310" height="370"/>
-  </p>
+<table>
+<tr>
+<td>
+
+
+  <div class="container">
+    <img src="https://i.pinimg.com/564x/28/9d/2f/289d2f3b9460d17b92a6cdc029673c63.jpg" alt="Avatar" class="image" width="437" height="514">
+    <div class="overlay">
+      <div class="text"><img src="https://i.pinimg.com/564x/be/2f/c5/be2fc5ae9e78353b1881ade3eaf2924b.jpg" width="437" height="514"></div>
+    </div>
+  </div></td>
+<td><div class="container">
+  <img src="https://i.pinimg.com/564x/86/df/1d/86df1de8149ef785765821c344401e22.jpg" alt="Avatar" class="image" width="437" height="514">
+  <div class="overlay">
+    <div class="text"><img src="https://i.pinimg.com/564x/68/1c/ea/681ceaa1c7e5b5ff2bef523f9a9e86e1.jpg" width="437" height="514"></div>
+  </div>
+</div>
+</td>
+  <td>
+<div class="container">
+  <img src=" https://i.pinimg.com/564x/62/7c/42/627c42d79c3a8698190cc075d5d090d3.jpg" alt="Avatar" class="image" width="437" height="514">
+  <div class="overlay">
+    <div class="text"><img src="https://i.pinimg.com/564x/15/e9/5d/15e95d0e59d2d33d3570490d747ecbf5.jpg" width="437" height="514"></div>
+  </div>
+</div>
+</td>
+  <td>
+
+    <div class="container">
+    <img src="https://i.pinimg.com/564x/3b/83/bd/3b83bdcfc4f156be7aa423d2c9e4b5c1.jpg" alt="Avatar" class="image" width="437" height="514">
+    <div class="overlay">
+      <div class="text"><img src="https://i.pinimg.com/564x/51/1b/4d/511b4d7335c6825208ad7addc409a28c.jpg" width="437" height="514"></div>
+    </div>
+  </div>
+
+
+
+</td>
+</tr>
+
 
   <p class="center">
-  <button class="buttonyolo">  'big pearl earring' €10,-' </button>
-  <button class="buttonyolo" > 'big curved hoops' €10,- </button>
-  <button class="buttonyolo"> 'small pearl earrings' €10,- </button>
-  <button class="buttonyolo"> 'big pearl ring earrings' €10,- </button>
+
+  <td><button class="buttonyolo"> 'Ruffle socks' €20,- </button></td>
+  <td><button class="buttonyolo"> 'Kleine groene handtas' €20,- </button></td>
+  <td><button class="buttonyolo"> 'Nike socks' €12,- </button></td>
+  <td><button class="buttonyolo">  'Haar speldjes' €7,-' </button></td>
+
+</table>
   </p>
+
 
   <div class="headertwo">
     <a href="overons.html"><button class=button>Over ons</button></a><br>
