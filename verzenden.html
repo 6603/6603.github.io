@@ -38,14 +38,106 @@ hr{
 
 .normaletext{
   margin-left: 255px;
-  margin-bottom: 20px;
   margin-right: 5%;
 }
 
-hr{
-  margin:20px;
-  margin-left: 250px;
-  margin-right: 5%;
+.flipeen {
+  padding: 15px;
+  border-left: solid 1px #d1d1d1;
+  border-top: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+
+}
+
+.flipeen:hover {
+  color: #b1c9a9;
+}
+
+.fliptwee {
+  padding: 15px;
+  border-left: solid 1px #d1d1d1;
+  border-top: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+}
+
+.fliptwee:hover {
+  color: #b1c9a9;
+}
+
+.flipdrie {
+  padding: 15px;
+  border-left: solid 1px #d1d1d1;
+  border-top: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+}
+
+.flipdrie:hover {
+  color: #b1c9a9;
+}
+
+.flipvier {
+  padding: 15px;
+  border-left: solid 1px #d1d1d1;
+  border-top: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+}
+
+.flipvier:hover {
+  color: #b1c9a9;
+}
+
+.flipvijf {
+  padding: 15px;
+  border: solid 1px #d1d1d1;
+}
+
+.flipvijf:hover {
+  color: #b1c9a9;
+}
+
+.paneleen {
+  padding: 15px;
+  display: none;
+  border-left: solid 1px #d1d1d1;
+  border-top: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+  background-color: #ececec;
+}
+
+.paneltwee {
+  padding: 15px;
+  display: none;
+  border-left: solid 1px #d1d1d1;
+  border-top: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+  background-color: #ececec;
+}
+
+.paneldrie {
+  padding: 15px;
+  display: none;
+  border-left: solid 1px #d1d1d1;
+  border-top: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+  background-color: #ececec;
+}
+
+.panelvier {
+  padding: 15px;
+  display: none;
+  border-left: solid 1px #d1d1d1;
+  border-top: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+  background-color: #ececec;
+}
+
+.panelvijf {
+  padding: 15px;
+  display: none;
+  border-left: solid 1px #d1d1d1;
+  border-bottom: solid 1px #d1d1d1;
+  border-right: solid 1px #d1d1d1;
+  background-color: #ececec;
 }
 
 </style>
@@ -54,12 +146,32 @@ hr{
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".flipeen").click(function(){
+    $(".paneleen").slideToggle("slow");
+  });
+  $(".fliptwee").click(function(){
+    $(".paneltwee").slideToggle("slow");
+  });
+  $(".flipdrie").click(function(){
+    $(".paneldrie").slideToggle("slow");
+  });
+  $(".flipvier").click(function(){
+    $(".panelvier").slideToggle("slow");
+  });
+  $(".flipvijf").click(function(){
+    $(".panelvijf").slideToggle("slow");
+  });
+});
+</script>
 <body>
   <div class="above" >  ♥ Gratis verzending vanaf €15,- ♥ Voor 17:00 bestelt, morgen thuis  </div>
 
   <div class="header">
-    <h1>   <a href="index.html">
-         <img src="lotsofjewerlybrown.jpg" alt="LotsOfJewerly"/ width=150 height=150/>  </a>
+    <h1>   <a href="C:\Users\elisa\OneDrive\Desktop\website\index.html">
+         <img src="LotsOfJewerlybrown.jpg" alt="LotsOfJewerly"/ width=150 height=150/>  </a>
     </h1>
   </div>
 
@@ -81,28 +193,25 @@ hr{
 <div class=title><b>Verzenden</b></div>
 <hr size= 4 color= b1c9a9>
 
-<div class="SecondTitle"><b>Wanneer komt mijn pakketje binnen?</b></div>
-<div class="normaletext">Pakketjes die vóór 17:00 worden besteld op een werkdag,
+<div class="normaletext flipeen">Wanneer komt mijn pakketje binnen?</div>
+<div class="normaletext paneleen"><div>Pakketjes die vóór 17:00 worden besteld op een werkdag,
   worden door Lots of Jewellery op dezelfde dag verzonden via postNL. Pakketjes
   die in het weekend worden besteld worden pas weer op de eerstvolgende werkdag
-  verzonden.</div><div class=normaletext> Wanneer het pakketje is verzonden, ontvang je hierover een mail.</div>
+  verzonden.</div><div> Wanneer het pakketje is verzonden, ontvang je hierover een mail.</div></div>
 
-<hr class="spAce" size= 4 color= b1c9a9>
 
-<div class="SecondTitle"><b>Hoe hoog zijn de verzendkosten?</b></div>
-<div class= "normaletext"> Als je een bestelling boven de €50,00 plaats, hoef je
+<div class="normaletext fliptwee">Hoe hoog zijn de verzendkosten?</div>
+<div class= "normaletext paneltwee"> Als je een bestelling boven de €50,00 plaats, hoef je
   geen verzendkosten te betalen. Als je bestelling onder de €50,00 is, zijn de
   verzendkosten <b>€4,95</b>.</div>
 
-<hr class="spAce" size= 4 color= b1c9a9>
 
-<div class="SecondTitle"><b>Door wie wordt mijn pakketje verzonden?</b></div>
-<div class="normaletext">Jouw pakketje wordt verzonden door PostNL.</div>
+<div class="normaletext flipdrie">Door wie wordt mijn pakketje verzonden?</div>
+<div class="normaletext paneldrie">Jouw pakketje wordt verzonden door PostNL.</div>
 
-<hr class="spAce" size= 4 color= b1c9a9>
 
-<div class="SecondTitle"><b>Mijn pakketje is nog niet binnengekomen, wat nu?</b></div>
-<div class="normaletext">Het kan zijn dat jouw pakket vertraging heeft opgelopen
+<div class="normaletext flipvier">Mijn pakketje is nog niet binnengekomen, wat nu?</div>
+<div class="normaletext panelvier">Het kan zijn dat jouw pakket vertraging heeft opgelopen
    bij de vervoerder. Wij adviseren daarom eerst om goed de track & trace code
    te bekijken. Hierin staat aangegeven wat de status is van de levering. Wanneer
    je hebt gekozen voor een brievenbuspakket, dan heb je geen track & trace code
@@ -110,10 +219,9 @@ hr{
    en deze worden niet bezorgd op zondag en maandag. Je kan ook met PostNL of
    met ons <a href="contact.html">contact</a> op nemen.</div>
 
-   <hr class="spAce" size= 4 color= b1c9a9>
 
-   <div class="SecondTitle"><b>Levertijden tijdens Feestdagen</b></div>
-   <div class="normaletext">Tijdens Feestdagen is het bij PostNl vaak druk.
+   <div class="normaletext flipvijf">Levertijden tijdens Feestdagen</div>
+   <div class="normaletext panelvijf">Tijdens Feestdagen is het bij PostNl vaak druk.
      Hou er daarom rekekning mee dat je pakketje later kan aankomen dan verwacht.</div>
 
 
